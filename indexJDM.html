@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--移动端视口设置-->
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<!--css初始化-->
+		<link rel="stylesheet" href="css/baseJDM.css" />
+		<!--index页面样式-->
+		<link rel="stylesheet" href="css/indexJDM.css" />
+		<title>京东Web_Mobile</title>
+		<!--引入jq-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--引入index.js-->
+		<script type="text/javascript" src="js/indexJDM.js"></script>
+		<!--引入zepto.js（基础）-->
+		<!--<script src="zepto-master/src/zepto.min.js"></script>-->
+		<!--<script type="text/javascript" src="js/zepto.min.js" ></script>-->
+		<!--引入zepto.js（选择器）-->
+		<!--<script src="zepto-master/src/selector.js"></script>-->
+		<!--动画-->
+		<!--<script src="zepto-master/src/fx.js"></script>-->
+		<!--移动端-->
+		<!--<script src="zepto-master/src/touch.js"></script>-->
+		<!--<script src="js/zeptoDIY.js"></script>-->
+	</head>
+	<body>
+		<!--整体布局-->
+		<div class="jd_layout">
+			<!--搜索框-->
+			<div class="jd_search">
+				<!--logo-->
+				<a href="javascript:void(0)" class="logo"></a>
+				<!--搜索框表单 -->
+				<form action="#" method="get" class="searchArea">
+					<input type="text" name="search" placeholder="请输入商品名称" />
+				</form>
+				<!--登录-->
+				<a href="javascript:void(0)" class="login">登录</a>
+			</div>
+			<!--轮播图-->
+			<div class="jd_banner clearfix">
+				<!--相框-->
+				<ul class="bannerImg">
+					
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l1.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l2.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l3.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l4.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l5.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l6.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l7.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/l8.jpg" />
+						</a>
+					</li>
+				</ul>
+				<!--小圆点-->
+				<ul class="bannerPoint">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<!--导航栏-->
+			<div class="jd_nav box_shadowDIY">
+				<ul class="navFirst">
+					<li>
+						<a href="category.html">
+							<img src="images/nav_1.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="images/nav_2.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="images/nav_3.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="images/nav_4.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+				</ul>
+				<ul class="navSecond">
+					<li>
+						<a href="javascript:void(0)">
+							<img src="images/nav_5.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="images/nav_6.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="images/nav_7.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="images/nav_8.png" />
+						</a>
+						<span>商品分类</span>
+					</li>
+				</ul>
+			</div>
+			<!--秒杀专区-->
+			<div class="jd_product  mx box_shadowDIY">
+				<!--顶部-->
+				<div class="product_top  float_left">
+					<!--掌上秒杀-->
+					<div class="proTop_left">
+						<!--图标-->
+						<span class="float_left"></span>
+						<!--文字-->
+						<p class="float_left">掌上秒杀</p>
+						<!--时钟-->
+						<div class="timeblockNotice">
+							<h4>活动结束</h4>
+						</div>
+						<ul class="timeblock float_left">
+							<li>0</li>
+							<li>0</li>
+							<li>:</li>
+							<li>0</li>
+							<li>0</li>
+							<li>:</li>
+							<li>0</li>
+							<li>0</li>
+						</ul>
+					</div>
+					<!--更多秒杀-->
+					<div class="proTop_right">
+						<p>更多秒杀...</p>
+					</div>
+					
+				</div>
+				<!--底部-->
+				<div class="clearfix">
+					<ul class="product_bottom float_right">
+						<li class="float_right">
+							<a href="javascript:void(0)">
+								<img src="uploads/detail01.jpg" />
+							</a>
+							<span>$10.00</span>
+							<span>$20.00</span>
+						</li>
+						<span class="line1"></span>
+						<li class="float_left">
+							<a href="javascript:void(0)">
+								<img src="uploads/detail01.jpg" />
+							</a>
+							<span>$10.00</span>
+							<span>$20.00</span>
+						</li>
+						<span class="line2"></span>
+						<li class="float_left">
+							<a href="javascript:void(0)">
+								<img src="uploads/detail01.jpg" />
+							</a>
+							<span>$10.00</span>
+							<span>$20.00</span>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+				
+			<!--商品区1-->
+			<div class="jd_product box_shadowDIY">
+				<!--京东超市-->
+				<!--顶部-->
+				<div class="product_top">
+					<h3>京东超市</h3>
+				</div>
+				<!--底部-->
+				<ul class="product_bottom clearfix">
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/cp1.jpg" />
+						</a>
+					</li>
+					<li class="b_border_left b_border_bottom">
+						<a href="javascript:void(0)">
+							<img src="uploads/cp2.jpg" />
+						</a>
+					</li>
+					<li class="b_border_left">
+						<a href="javascript:void(0)">
+							<img src="uploads/cp3.jpg" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--商品区2-->
+			<div class="jd_product box_shadowDIY">
+				<!--京东超市-->
+				<!--顶部-->
+				<div class="product_top">
+					<h3>京东超市</h3>
+				</div>
+				<!--底部-->
+				<ul class="product_bottom clearfix" style="background-color: #fcca13;">
+					<li class="float_right" >
+						<a href="javascript:void(0)">
+							<img src="uploads/cp4.jpg" />
+						</a>
+					</li>
+					<li class="float_left b_border_right b_border_bottom " style="background-color: #a4cc2d;">
+						<a href="javascript:void(0)">
+							<img src="uploads/cp5.jpg" />
+						</a>
+					</li>
+					<li class="b_border_right b_border_top float_left" style="background-color: #fe8112;">
+						<a href="javascript:void(0)">
+							<img src="uploads/cp6.jpg" />
+						</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+			
+			<!--商品区3-->
+			<div class="jd_product box_shadowDIY">
+				<!--京东超市-->
+				<!--顶部-->
+				<div class="product_top">
+					<h3>京东超市</h3>
+				</div>
+				<!--底部-->
+				<ul class="product_bottom clearfix">
+					<li>
+						<a href="javascript:void(0)">
+							<img src="uploads/cp1.jpg" />
+						</a>
+					</li>
+					<li class="b_border_left b_border_bottom">
+						<a href="javascript:void(0)">
+							<img src="uploads/cp2.jpg" />
+						</a>
+					</li>
+					<li class="b_border_left">
+						<a href="javascript:void(0)">
+							<img src="uploads/cp3.jpg" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

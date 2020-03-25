@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3D旋转</title>
+
+		<style>
+			 #circlr {
+			     cursor: move;
+			     margin: 0 auto;
+			     min-height: 100px;
+			     position: relative;
+			  }
+		     #circlr #loader {
+			     background: url(../images/loader.gif) center center no-repeat;
+			     bottom: 0;
+			     display: none;
+			     left: 0;
+			     position: absolute;
+			     right: 0;
+			     top: 0;
+			  }
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">
+	        <div id="circlr">
+				<img data-src="picture/1.png" />
+				<img data-src="picture/2.png" />
+				<img data-src="picture/3.png" />
+	            <div id="loader"></div>
+	        </div>
+ 		</div>
+ 		
+ 		
+		<script type="text/javascript">
+			var circlr = document.getElementById("circlr");
+		    for (var i = 1; i <= 71; i++) {
+		        var pic = document.createElement("img");
+		        circlr.appendChild(pic);
+		        pic.setAttribute("data-src", "picture/" + i + ".png");
+		
+		    }	
+
+		</script>
+		<script src="js/jquery.min.js"></script>
+   		<script src="js/circlr.min.js"></script>
+   		
+		<script type="text/javascript">
+			var crl = circlr('circlr', {
+			  scroll : true,
+			  loader : 'loader'
+			});
+		</script>
+	</body>
+</html>

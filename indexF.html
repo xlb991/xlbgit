@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>QQ浏览器</title>
+		<!--引入index.Css-->
+		<link rel="stylesheet" href="css/indexQQ.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		
+	</head>
+	<body>
+		<!--泡泡背景图-->
+		<div class="bgBubble">
+			<div class="row1">
+				<div></div>
+				<div></div>
+			</div>
+			<div class="row2">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="row3">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div id="fullpage">
+			
+			
+				<div class="introuduce">
+						<img src="images/title3.png" />
+						<img src="images/title2_3.png" />
+					</div>
+			</div>
+			
+			<div class="section">
+				<div class="bgModel"></div>
+			</div>
+		</div>
+		
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script>
+			//定时器
+			setTimeout(function(){
+				//为class为section添加一个样式
+				$(".section").addClass("change");
+			},500);
+			$('#fullpage').fullpage({
+				onLeave : function (index,nextIndex ){
+					if(index == 1){
+						//气泡模板旋转（添加样式）
+						$(".bgBubble").addClass("rotateM");
+					}else{
+						$(".bgBubble").removeClass("rotateM");
+					}
+					if(nextIndex == 2){
+						//时钟变大
+						$(".section2_1").css("transform","translateZ(-500px) rotateZ(90deg) scale(10)");
+						//改变样式的transform的值
+						$(".section2").addClass("changeSection2");
+					}else{
+						$(".section2_1").css("transform","translateZ(100px) rotateZ(0deg) scale(0.2)");
+						$(".section2").removeClass("changeSection2");
+					}
+					if(index == 2){
+						$(".section2").css("transform","translateZ(0px)");
+					}
+					if(index == 2 && nextIndex == 3){
+						$(".section2").css("transform","translateZ(2000px)");
+					}
+					if(nextIndex == 3){
+						//改变样式的transform的值
+						
+						$(".section3").css("transform","rotateX(30deg) translateX(200px) translateZ(0px)");
+						$(".introuduce").css("transform","translateX(0px) rotateY(0deg)");
+					}
+					if(index ==3 && nextIndex ==4){
+						$(".section3").css("transform","rotateX(30deg) translateX(200px) translateZ(1100px)");
+						$(".introuduce").css("transform","translateX(-1000px) rotateY(-20deg)");
+					}
+					
+				}
+				
+			});
+			
+		</script>
+	</body>
+</html>
